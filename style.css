@@ -3,16 +3,39 @@ body{
 }
 
 #container {
-    width: 5px;
-    height: 5px;
+    width: 2px;
+    height: 2px;
     overflow: hidden;
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
     resize: both;
+    background-color: hotpink;
+    color: lime;
+    font-family: Comic Sans MS, cursive;
     text-align: center;
 }
 
 #container h1 {
-    color: white
+    font-size: 72px;
+    text-decoration: underline;
+    color: red;
+}
+
+#container p {
+    font-size: 24px;
+    color: blue;
+}
+
+.button {
+    background-color: yellow;
+    color: purple;
+    font-size: 36px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: lime;
+    color: red;
 }
 
 .snow {

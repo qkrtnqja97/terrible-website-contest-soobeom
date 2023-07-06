@@ -10,35 +10,10 @@
     <body>
         <div id="container">
             <h1>WELCOME TO TERRIBLE WEBSITES</h1>
-            <script>
-                var container = document.getElementById("container");
-                function createSnow(){
-                    const el = document.createElement("div");
-                    el.classList.add('snow');
-                    el.onclick = function(event){
-                        alert("error");
-                    };
-                    el.style.marginLeft = randomPosition() + 'px';
-                    container.appendChild(el);
-                }
-                function createnextSnow(){
-                    const el = document.createElement("div");
-                    el.classList.add('snow');
-                    el.classList.add('next');
-                    el.style.marginLeft = randomPosition() + 'px';
-                    container.appendChild(el);
-                }
-                function nextMove(){
-                    alert("error");
-                }
-                function randomPosition(){
-                    return Math.floor(Math.random() * window.innerWidth);
-                }
-                for(let i=0; i<300; i++){
-                    createSnow();
-                };
-            </script>
-            <div class="snow next">hi</div>
+            <p>This webpage was intentionally designed to be an eyesore. We apologize for any discomfort caused.</p>
+            <p>If you'd like to experience more terrible design, <a onclick="alert('error')">click</a> the button below:</p>
+            <a href="index.html" class="button" onclick="alert('error')">Click Me!</a>
         </div>
     </body>
 </html>
+

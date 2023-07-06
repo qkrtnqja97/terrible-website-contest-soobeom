@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terrible-websites</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <h1>WELCOME TO TERRIBLE WEBSITES</h1>
+            <script>
+                var container = document.getElementById("container");
+                function createSnow(){
+                    const el = document.createElement("div");
+                    el.classList.add('snow');
+                    el.onclick = function(event){
+                        alert("error");
+                    };
+                    el.style.marginLeft = randomPosition() + 'px';
+                    container.appendChild(el);
+                }
+                function createnextSnow(){
+                    const el = document.createElement("div");
+                    el.classList.add('snow');
+                    el.classList.add('next');
+                    el.style.marginLeft = randomPosition() + 'px';
+                    container.appendChild(el);
+                }
+                function nextMove(){
+                    alert("error");
+                }
+                function randomPosition(){
+                    return Math.floor(Math.random() * window.innerWidth);
+                }
+                for(let i=0; i<300; i++){
+                    createSnow();
+                };
+            </script>
+            <div class="snow next">hi</div>
+        </div>
+    </body>
+</html>
