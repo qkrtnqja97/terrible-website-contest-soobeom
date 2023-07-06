@@ -1,11 +1,11 @@
-body{
+.index{
     background-image: url('imgs/banner.jpeg');
 }
 
 #container {
     width: 2px;
     height: 2px;
-    overflow: hidden;
+    overflow: auto;
     resize: both;
     background-color: hotpink;
     color: lime;
@@ -38,6 +38,96 @@ body{
     color: red;
 }
 
+a[href="pages/step1.html"] {
+    text-decoration: none;
+    color:blue;
+}
+
+.step1 {
+    background-image: url('imgs/background2.jpeg');
+}
+
+#container2 {
+    width: 2px;
+    height: 2px;
+    overflow: auto;
+    resize: both;
+    text-align: center;
+    margin: 80px 130px;
+    background: lime;
+    color: fuchsia;
+    font-family: Comic Sans MS, cursive;
+}
+
+#container2 p {
+    text-decoration: underline;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.unreadable {
+    font-family: Impact, Charcoal, sans-serif;
+}
+
+.fake-div {
+    width: 2px;
+    height: 2px;
+    overflow: auto;
+    resize: both;
+    margin:30px 80px;
+    text-align: center;
+    background-color:fuchsia;
+    color:red;
+}
+
+.first {
+    margin: 20px 50px;
+}
+.second {
+    margin: 220px 280px;
+}
+.third {
+    margin: 380px 410px;
+}
+
+.flag-div {
+    width: 2px;
+    height: 2px;
+    overflow: auto;
+    resize: both;
+    text-align: center;
+    margin: 10px 380px;
+    background-color:#FFFF00 ;
+    color:red;
+}
+
+.flag-button{
+    background-color: yellow;
+    color: purple;
+    font-size: 36px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.flag-button:hover {
+    cursor:default;
+}
+
+.signup {
+    background-image: url('imgs/background3.jpeg');
+}
+
+#container3 {
+    width: 3px;
+    height: 3px;
+    overflow: auto;
+    resize: both;
+    text-align: center;
+    color:#fff;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+}
+
 .snow {
     width:10px;
     height:10px;
@@ -64,12 +154,6 @@ body{
     animation-delay: 3s;
 }
 
-.next {
-    background-color: red;
-    margin-left:40px;
-    animation-duration: 20s;
-    animation: none;
-}
 
 @keyframes snow{
     0% {
